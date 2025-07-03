@@ -1,0 +1,109 @@
+
+    .foot
+{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+
+    align-items: center;
+  
+}
+
+.foot h2
+{
+    margin: 2px solid white;
+    padding: 20px;
+
+    border-left: 3px solid white;
+    align-items: center;
+}
+
+form{
+    margin-left: 100px;
+    height: 54vh;
+    /* width:700px; */
+    width: 60%;
+    padding: 20px;
+    /* align-items: flex-start; */
+
+    border: rgb(80, 78, 78) 2px solid;
+    border-radius: 10px;
+    background-color: rgb(12, 11, 15);
+   
+
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+}
+form:hover{
+    transform: scale(1.01);
+    border-color: #780202;
+}
+input, textarea
+{
+    padding: 1vh;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    
+}
+
+input:hover,textarea:hover
+{
+   border: 2px #fc0808 solid;
+}
+
+label
+{
+    color: white;
+    font-size: smaller;
+
+}
+
+button{
+    width: 140px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: #920202;
+    border: 2px solid #780202;;
+}
+button:hover{
+    border: 2px solid #f70909;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .foot
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .foot h2
+    {
+        border-left:transparent ;
+        border-bottom: 3px solid white;
+        text-align: center;
+    }
+
+    form
+    {
+        margin: 0;
+        width: 90%;
+    }
+
+    .thank-you h3
+    {
+        margin-top: 20px;
+        width:100% ;
+        text-align: center;
+
+    }   
+    
+}

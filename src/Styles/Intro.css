@@ -1,0 +1,118 @@
+.bio
+{
+    text-align: left;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+
+  margin-top: 13vh;
+  
+}
+
+.bio
+{
+    color: white;
+    line-height: 2;
+    width: 50%;
+    /* border: 2px solid white; */
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio h1, .bio h2
+{
+
+    width: 80%;
+    text-align: left;
+}
+
+.photo {
+  transition: all 0.5s ease-in-out;
+  width: 50%;
+  /* border: 2px solid white ; */
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.pic {
+  height: 60vh;
+  width: 30vw;
+  border-radius: 50%;
+  background-image: url('../assets/me.jpg'); /* adjust path */
+  background-size: cover;
+  border: 2px solid red;
+}
+
+/* Shrinking effect */
+/* .photo.shrink {
+  position: fixed;
+  top: 0.1vh;
+  left: 1.1vw;
+  transform: scale(0.2) translateY(-90%);
+  z-index: 1000;
+} */
+
+.photo.shrink {
+  position: fixed;
+  top: -43.5vh; /* aligned with .nav-bar height */
+  left: -7vw; /* near logo */
+  transform: scale(0.18); /* shrink it down */
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+
+/* intro */
+@media screen and (max-width : 768px)
+{
+  .intro
+  {
+    display: flex;
+    flex-direction: column;
+    height: 76vh;
+    width: 100%;
+    margin-top: 15vh;
+  }
+
+  .bio
+  {
+    width: 100%;
+
+  }
+
+  .photo
+  {
+    width: 100%;
+
+  }
+
+  .pic{
+    height: 42vh;
+    width: 77vw;
+  }
+
+  .photo.shrink
+  {
+    position: fixed;
+    top: -43.5vh; /* aligned with .nav-bar height */
+    left: 3vw; /* near logo */
+    transform: scale(0.18); /* shrink it down */
+    transition: all 0.4s ease;
+    z-index: 999;
+  }
+}
